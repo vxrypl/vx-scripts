@@ -103,7 +103,7 @@ getgenv().ExunysDeveloperAimbot = {
 		OffsetToMoveDirection = false,
 		OffsetIncrement = 15,
 
-		Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
+		Sensitivity = 0.1, -- Animation length (in seconds) before fully locking onto target
 		Sensitivity2 = 3.5, -- mousemoverel Sensitivity
 
 		LockMode = 1, -- 1 = CFrame; 2 = mousemoverel
@@ -117,7 +117,7 @@ getgenv().ExunysDeveloperAimbot = {
 		Enabled = true,
 		Visible = true,
 
-		Radius = 90,
+		Radius = 240,
 		NumSides = 60,
 
 		Thickness = 1,
@@ -126,7 +126,7 @@ getgenv().ExunysDeveloperAimbot = {
 
 		RainbowColor = false,
 		RainbowOutlineColor = false,
-		Color = Color3fromRGB(255, 255, 255),
+		Color = Color3fromRGB(255, 0, 0),
 		OutlineColor = Color3fromRGB(0, 0, 0),
 		LockedColor = Color3fromRGB(255, 150, 150)
 	},
