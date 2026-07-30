@@ -1,9 +1,11 @@
 local S = {}
 S.NoRecoil = {}
+S.NoRecoil.Connections = {}
 S.NoRecoil.Settings = {}
 S.NoRecoil.Settings.GunMods = {}
 S.NoRecoil.Settings.GunMods.NoRecoil = true
-S.NoRecoil.Settings.GunMods.NoSpread = true
+S.NoRecoil.Settings.GunMods.Spread = true
+S.NoRecoil.Settings.GunMods.SpreadAmount = 0
 
 local function cacheWeapons_NR()
     S.NoRecoil.WeaponCache = {}
@@ -135,7 +137,7 @@ blah.toggle = function(state, norecoil, nospread)
         S.NoRecoil.Settings.GunMods.NoRecoil = norecoil
     end
     if nospread then
-        S.NoRecoil.Settings.GunMods.NoSpread = nospread
+        S.NoRecoil.Settings.GunMods.Spread = nospread
     end
     if state then
         enableNoRecoil()
